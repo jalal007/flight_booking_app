@@ -1,0 +1,610 @@
+@import "variables";
+@import "icons";
+@import "mixins";
+@import "config";
+@import "utilities";
+@import "form";
+@import "pages/home";
+@import "pages/flights";
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 15px 20px 30px;
+}
+/*support*/
+.support{
+  padding: 10px 20px 30px;
+  &-box{
+    padding: 20px 0;
+    &:not(:last-child){
+      border-bottom: 1px solid $off-white;
+    }
+    span{
+      font-size: 14px;
+      font-weight: 400;
+      color: #777E90;
+      display: block;
+      margin:  0 0 20px;
+      line-height: 24px;
+      a{
+        display: block;
+        color: $black;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px 0 0;
+      }
+      &.title{
+        font-size: 22px;
+        font-weight: 500;
+        color: $black;
+        margin:  0 0 15px;
+      }
+    }
+  }
+  &-mail{
+    text-decoration: underline;
+  }
+}
+.btn{
+  &.whatsapp-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: $black;
+    gap: 10px;
+    i{
+      font-size: 20px;
+    }
+  }
+}
+textarea.form-control{
+  min-height: 120px;
+}
+/*faq*/
+.faq{
+  .am-collapse-item{
+    background: transparent;
+    &-title{
+      margin: 0;
+      padding: 20px 0;
+      border-bottom: 1px solid $off-white;
+    }
+    text{
+      font-size: 16px;
+      font-weight: 500;
+      color: $black;
+    }
+  }
+  &-content{
+    font-size: 14px;
+    line-height: 24px;
+    color: $text-color;
+    padding: 15px 0 10px 26px;
+  }
+}
+/*pending flight*/
+.pay-now{
+  padding-top: 30px;
+  text{
+    &.title{
+      font-size: 20px;
+      font-weight: 500;
+      color: $black;
+      text-align: center;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  &-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text{
+      color: $text-color;
+      font-size: 24px;
+      font-weight: 700;
+      &.icon-clock{
+        color: $brand-color;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+text.common-title{
+  font-size: 20px;
+  font-weight: 500;
+  color: $black;
+  display: block;
+  margin-bottom: 15px;
+}
+.fare{
+  &-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+}
+.divider{
+  width: 100%;
+  height: 1px;
+  background: $off-white;
+  margin: 6px 0;
+}
+.green{
+  color: $green;
+}
+.passenger{
+  &-details{
+    padding: 10px 0px 0px;
+    .am-tabs-bar-content{
+      width: 80%;
+    }
+    .am-tabs-bar-tab{
+      justify-content: left;
+    }
+  }
+  &-item{
+    padding: 10px 0;
+    text{
+      font-size: 15px;
+      color: $text-color;
+      &.bold{
+        font-size: 16px;
+        font-weight: 500;
+        color: $black;
+        display: block;
+      }
+    }
+  }
+}
+.last-login{
+  width: auto;
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  span{
+    font-size: 12px;
+    color: $gray-dark;
+  }
+}
+/*new css*/
+
+.search-flight-btn{
+  width: 100%;
+  padding: 20px 20px 40px;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.flight-logo image {
+  height: 92px;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto 10px;
+}
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3B71FE;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.no-ticket{
+  text-align: center;
+}
+.text-blue{
+  color: $brand-color !important;
+}
+.fare-summary{
+  &.popup{
+    height: 58vh;
+  }
+  .common-title{
+    border-bottom: 1px solid #E6E8EC;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .icon-chevron-down{
+      font-size: 24px;
+    }
+  }
+  .flight-info{
+    border-bottom: 0;
+  }
+}
+.d-block{
+  display: block;
+}
+.underline{
+  text-decoration: underline;
+  margin-bottom: 6px;
+}
+.calendar{
+  &-wrap{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  &-inner{
+    width: 100%;
+    margin: auto;
+  }
+}
+.terms-modal{
+  color: $brand-color;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+/*------*/
+.header{
+  background: $brand-color;
+  color: $white;
+  padding: 15px;
+  a{
+    color: $white;
+  }
+  h1{
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    font-weight: 500;
+  }
+}
+.form-area{
+  i{
+    font-size: 26px;
+    font-weight: 600;
+    color: #B1B5C3;
+  }
+  ion-input{
+    color: $text-color;
+  }
+  .item-inner{
+    border: 0;
+  }
+}
+.custom-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  .nav-item{
+    color: #787878;
+    font-size: 14px;
+    font-weight: 500;
+    i{
+      font-size: 18px;
+    }
+    &.active{
+      color: $brand-color;
+      span{
+        color: $brand-color;
+      }
+    }
+  }
+}
+.main-content{
+  padding: 20px;
+}
+.home-content{
+  padding: 20px 20px 80px;
+}
+.flight-search-tab{
+  ion-segment{
+    background: transparent;
+    gap: 5px;
+  }
+  ion-segment-button{
+    padding: 8px 6px;
+    background: $white;
+    border: 1px solid #C6C6C8;
+    color: $black;
+    font-weight: 600;
+  }
+  .segment-button-checked{
+    background: $brand-color;
+    color: $white;
+    --indicator-color: none;
+  }
+}
+.logo-area{
+  text-align: center;
+  padding: 20px 0 10px;
+  .skyhome-logo{
+    height: 32px;
+    display: block;
+    margin: auto;
+  }
+  p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #A3A3A3;
+    font-weight: 400;
+    margin: 5px 0 0;
+    img{
+      filter: grayscale(1);
+      height: 12px;
+    }
+  }
+}
+.back-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-btn{
+    display: flex;
+    align-items: center;
+    color: $white;
+    a{
+    color: $white;
+    font-size: 22px;
+    }
+  }
+  .close-btn ion-button{
+    color: $white;
+  }
+}
+.search-box{
+  padding: 0 !important;
+  .searchbar-input{
+    padding: 15px 15px 15px 30px !important;
+  }
+}
+.menu-list{
+  padding: 0;
+  margin: 0;
+  li{
+    list-style: none;
+    position: relative;
+    border-bottom: 1px solid #C6C6C8;
+    &:after{
+      position: absolute;
+      right: 0;
+      top: 15px;
+      content: $icon-chevron-right;
+      font-family: '#{$icomoon-font-family}';
+      font-size: 20px;
+      color: #727272;
+    }
+    a{
+      display: flex;
+      gap: 15px;
+      color: $black;
+      font-weight: 500;
+      padding: 20px 0;
+      font-size: 18px;
+      i{
+        font-size: 20px;
+        color: #727272;
+      }
+    }
+  }
+}
+.history-list{
+  padding: 0;
+  margin: 0;
+  li{
+    list-style: none;
+    position: relative;
+    border-bottom: 1px solid #C6C6C8;
+    &:after{
+      position: absolute;
+      right: 0;
+      top: 15px;
+      content: $icon-chevron-right;
+      font-family: '#{$icomoon-font-family}';
+      font-size: 20px;
+      color: #727272;
+    }
+    a{
+      display: flex;
+      gap: 15px;
+      color: $black;
+      font-weight: 500;
+      padding: 20px 0;
+      font-size: 18px;
+      i{
+        font-size: 20px;
+        color: #27AE60;
+      }
+    }
+    &:nth-child(2) i{
+      color: #FF9A2D;
+    }
+    &:nth-child(3) i{
+      color: #EB5757;
+    }
+    &:nth-child(4) i{
+      color: #0084FF;
+    }
+  }
+}
+.profile{
+  &-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #C6C6C8;
+    position: relative;
+    margin: 0 auto;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-capture{
+    width: 32px;
+    height: 32px;
+    border: 2px solid #C6C6C8;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: $white;
+    border-radius: 50px;
+    display: flex;
+    label{
+      margin: auto;
+    }
+    input{
+      display: none;
+    }
+    i{
+      font-size: 20px;
+      color: $black;
+    }
+  }
+  h3{
+    font-size: 18px;
+    color: #01040D;
+    font-weight: 500;
+    margin: 10px 0 0;
+    text-align: center;
+  }
+  &-info{
+    margin-top: 25px;
+    &-item{
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 8px;
+      padding: 15px 0;
+      i{
+        color: $black;
+      }
+      h4{
+        font-size: 14px;
+        font-weight: 500;
+        color: $black;
+        margin: 0;
+        span{
+          display: block;
+          color: #8991A4;
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+}
+.ion-delegate-host.ion-page {
+    justify-content: normal;
+}
+.faq-content{
+  padding: 15px;
+}
+.faq-wrap{
+  .ion-accordion-toggle-icon{
+    font-size: 18px;
+  }
+}
+.no-flight{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  img{
+    height: 120px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  p{
+    color: $black;
+    margin: 0 0 20px;
+  }
+}
+.success{
+  text-align: center;
+  img{
+    height: 160px;
+    display: block;
+    margin: 30px auto 20px;
+  }
+  p{
+    color: $black;
+    margin: 0 0 20px;
+  }
+  h3{
+    margin-bottom: 20px;
+  }
+}
+.header .toolbar-background{
+  background: none !important;
+}
+ion-content{
+  background: #F7F7F7 !important;
+}
+.reschedule-link{
+  border-bottom: 1px solid #E6E8EC;
+  padding-bottom: 15px;
+  display: block;
+  margin-bottom: 15px;
+  a{
+    color: #E47804;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.cancel-btn{
+  color: $brand-color;
+  font-size: 16px;
+  font-weight: 600;
+}
+ion-header{
+  box-shadow:none;
+}
+
+ion-header::after{
+  display:none;
+}
+
+ion-toolbar{
+  --border-width:0;
+  --box-shadow:none;
+}
+.flight-summary-wrap{
+  ion-item ion-label{
+    font-size: 18px !important;
+    font-weight: 500;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+ion-header{
+    box-shadow:none !important;
+}
+ion-toolbar{
+    --padding-start:0;
+    --padding-end:0;
+    --padding-top:0;
+    --padding-bottom:0;
+    --border-width:0;
+    --min-height:auto;
+    --box-shadow:none;
+}
+.header-md::after,
+.header-ios::after{
+    display:none !important;
+}
