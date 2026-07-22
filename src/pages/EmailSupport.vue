@@ -8,7 +8,7 @@
     </div>
     <div class="main-content">
       <div class="support-box">
-        <span>Prefer email? Reach us at below email and wewill get back to you. <a href="mailto:support.airticket@sohoj.my">support.airticket@sohoj.my</a></span>
+        <span>Prefer email? Reach us at below email and wewill get back to you. <a href="mailto:support@flightbooking.com">support@flightbooking.com</a></span>
       </div>
     </div>
   </div>

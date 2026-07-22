@@ -4,7 +4,7 @@
       <ion-toolbar>
         <div class="header">
           <div class="back-header-btn">
-            <h1>Air tickets</h1>
+            <h1>Flight Booking</h1>
           </div>
         </div>
       </ion-toolbar>
