@@ -1,6 +1,6 @@
 # Flight Booking App
 
-A minimal **Ionic + Vue** mobile app boilerplate for UI/UX handover and future backend API integration.
+A modern cross-platform flight booking app built with **Ionic, Vue.js** and Capacitor.
 
 ## Live Demo
 
