@@ -2,6 +2,10 @@
 
 A minimal **Ionic + Vue** mobile app boilerplate for UI/UX handover and future backend API integration.
 
+## Live Demo
+
+🌐 https://flightbookingapp-seven.vercel.app
+
 ## Features
 
 - Mobile-first project structure
