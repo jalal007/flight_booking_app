@@ -1,6 +1,6 @@
 <template>
   <div class="main-content success">
-    <img src="../../public/assets/images/icon-success.svg" alt="">
+    <img src="/assets/images/icon-success.svg" alt="">
     <h3>Message sent!</h3>
     <p>Your message has been sent successfully. We will contact your shortly.</p>
     <p><strong>Ticket number #2026234567</strong></p>

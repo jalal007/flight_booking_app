@@ -1,7 +1,7 @@
 <template>
   <div class="flight-box">
     <div class="flight-logo">
-      <img src="../../../public/assets/images/biman-logo.svg" alt="Airline Logo" />
+      <img src="/assets/images/biman-logo.svg" alt="Airline Logo" />
       <span>Biman Bangladesh Airlines</span>
     </div>
     <div class="flight-info">

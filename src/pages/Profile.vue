@@ -15,7 +15,7 @@
       <div class="container">
         <div class="profile">
           <div class="profile-img">
-            <img src="../../../public/assets/images/user-avatar.png" alt="profile" />
+            <img src="/assets/images/user-avatar.png" alt="profile" />
             <div class="profile-capture">
               <label><input type="file" /> <i class="icon-camera"></i></label>
             </div>

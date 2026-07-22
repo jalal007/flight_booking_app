@@ -16,12 +16,12 @@
         <div class="logo-area">
           <img
             class="skyhome-logo"
-            src="../../../public/assets/images/skyhome-logo.png"
+            src="/assets/images/skyhome-logo.png"
             alt="Skyhome"
           />
           <p>
             Technology Partner
-            <img src="../../../public/assets/images/sohoj-logo.svg" alt="sohoj" />
+            <img src="/assets/images/sohoj-logo.svg" alt="sohoj" />
           </p>
         </div>
       </div>

@@ -8,7 +8,7 @@
     </div>
     <div class="main-content">
       <div class="no-flight">
-        <img src="../../public/assets/images/no-flight.svg" alt="">
+        <img src="/assets/images/no-flight.svg" alt="">
         <p>No flight tickets are available right now according to your selected route</p>
         <button class="btn">Search again</button>
       </div>

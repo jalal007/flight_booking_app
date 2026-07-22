@@ -13,7 +13,7 @@
     <ion-content :fullscreen="true">
       <div class="container pb-16">
         <div class="payment-banner">
-          <img src="../../public/assets/images/payment-banner.svg" alt="" />
+          <img src="/assets/images/payment-banner.svg" alt="" />
         </div>
         <div class="payment-header">
           <h3>Payment method</h3>
@@ -24,7 +24,7 @@
             <div class="payment-card">
               <div class="payment-item">
                 <div class="payment-left">
-                  <img src="../../public/assets/images/sohoj-logo.svg" alt="" />
+                  <img src="/assets/images/sohoj-logo.svg" alt="" />
                   <span>Sohoj point</span>
                 </div>
                 <ion-radio value="sohoj" mode="md"></ion-radio>
@@ -37,7 +37,7 @@
             <div class="payment-card">
               <div class="payment-item">
                 <div class="payment-left">
-                  <img src="../../public/assets/images/tng-logo.svg" alt="" />
+                  <img src="/assets/images/tng-logo.svg" alt="" />
                   <span>TouchGo</span>
                 </div>
                 <ion-radio value="touchgo" mode="md"></ion-radio>
@@ -49,7 +49,7 @@
             <div class="payment-card">
               <div class="payment-item">
                 <div class="payment-left">
-                  <img src="../../public/assets/images/visa-logo.svg" alt="" />
+                  <img src="/assets/images/visa-logo.svg" alt="" />
                   <span>Debit/Credit Card</span>
                 </div>
                 <ion-radio value="card" mode="md"></ion-radio>

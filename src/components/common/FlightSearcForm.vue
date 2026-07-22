@@ -123,7 +123,7 @@
           <h1>Flying from</h1>
         </div>
         <ion-buttons slot="end" class="close-btn">
-          <ion-button @click="closeModal('flayingFrom')">Cancel</ion-button>
+          <ion-button @click="closeModal">Cancel</ion-button>
         </ion-buttons>
       </div>
       <div class="main-content">
@@ -154,7 +154,7 @@
           <h1>Going to</h1>
         </div>
         <ion-buttons slot="end" class="close-btn">
-          <ion-button @click="closeModal('goingTo')">Cancel</ion-button>
+          <ion-button @click="closeModal">Cancel</ion-button>
         </ion-buttons>
       </div>
       <div class="main-content">
@@ -185,7 +185,7 @@
           <h1>Departure date</h1>
         </div>
         <ion-buttons slot="end" class="close-btn">
-          <ion-button @click="closeModal('departureDate')">Cancel</ion-button>
+          <ion-button @click="closeModal">Cancel</ion-button>
         </ion-buttons>
       </div>
       <div class="main-content">
@@ -200,7 +200,7 @@
           <h1>Return date</h1>
         </div>
         <ion-buttons slot="end" class="close-btn">
-          <ion-button @click="closeModal('returnDate')">Cancel</ion-button>
+          <ion-button @click="closeModal">Cancel</ion-button>
         </ion-buttons>
       </div>
       <div class="main-content">
@@ -215,7 +215,7 @@
           <h1>Add travelers</h1>
         </div>
         <ion-buttons slot="end" class="close-btn">
-          <ion-button @click="closeModal('addTravelers')">Cancel</ion-button>
+          <ion-button @click="closeModal">Cancel</ion-button>
         </ion-buttons>
       </div>
       <div class="main-content">
@@ -295,9 +295,9 @@ import {
   IonDatetime,
 } from '@ionic/vue'
 
-const activeModal = ref(null)
+const activeModal = ref<string | null>(null)
 
-const openModal = (name) => {
+const openModal = (name: string) => {
   activeModal.value = name
 }
 

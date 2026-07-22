@@ -57,7 +57,7 @@
                   <div>
                     <img
                       class="logo"
-                      src="../../public/assets/images/emirates-logo.png"
+                      src="/assets/images/emirates-logo.png"
                       alt="flight"
                     />
                     <p>Boeing 737</p>
@@ -99,7 +99,7 @@
                   <div>
                     <img
                       class="logo"
-                      src="../../public/assets/images/emirates-logo.png"
+                      src="/assets/images/emirates-logo.png"
                       alt="flight"
                     />
                     <p>Boeing 737</p>
