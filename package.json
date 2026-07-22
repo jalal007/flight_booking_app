@@ -5,8 +5,8 @@
   "description": "Professional Ionic Vue Capacitor mobile app boilerplate for AirTicket App.",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "npm run type-check && vite build",
+    "dev": "node init && vite --host 0.0.0.0",
+    "build": "node init && npm run type-check && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "lint": "eslint .",
     "format": "prettier --write .",
@@ -18,8 +18,8 @@
     "cap:sync": "npm run build && cap sync",
     "cap:android": "npm run cap:sync && cap open android",
     "cap:ios": "npm run cap:sync && cap open ios",
-    "build:android": "npm run build && cap sync android && cd android && gradlew.bat assembleDebug",
-    "build:ios": "npm run build && cap sync ios && cap open ios",
+    "build:android": "node init && npm run build && cap sync android && cd android && gradlew.bat assembleDebug",
+    "build:ios": "node init && npm run build && cap sync ios && cap open ios",
     "ionic:build": "npm run build",
     "ionic:serve": "npm run dev -- --open"
   },

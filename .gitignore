@@ -23,13 +23,10 @@ Thumbs.db
 $RECYCLE.BIN/
 
 # Environment and local secrets
-.env
-.env.*
 !.env.example
 
 # Editors and OS files
 /.idea
-/.vscode/*
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
@@ -63,3 +60,4 @@ UserInterfaceState.xcuserstate
 *.mobileprovision
 *.provisionprofile
 *.xcuserstate
+config.bat
